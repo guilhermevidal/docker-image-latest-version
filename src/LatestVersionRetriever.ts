@@ -24,7 +24,6 @@ export class LatestVersionRetriever {
 
     latestVersion(
         version: string = '*',
-        namespace: string = '',
         versioningStrategy: VersioningStrategy = new SemverVersioningStrategy(version)
     ) {
         return new Promise((resolve, reject) => {

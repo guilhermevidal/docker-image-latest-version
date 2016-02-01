@@ -9,5 +9,5 @@ export declare class LatestVersionRetriever {
         password?: string;
         insecure?: boolean;
     }): void;
-    latestVersion(version?: string, namespace?: string, versioningStrategy?: VersioningStrategy): Promise<{}>;
+    latestVersion(version?: string, versioningStrategy?: VersioningStrategy): Promise<{}>;
 }

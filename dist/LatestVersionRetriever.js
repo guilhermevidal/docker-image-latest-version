@@ -10,10 +10,9 @@ var LatestVersionRetriever = (function () {
     LatestVersionRetriever.prototype.initWithOptions = function (options) {
         this._tagsProvider = new DockerRegistryClientTagsProvider(options);
     };
-    LatestVersionRetriever.prototype.latestVersion = function (version, namespace, versioningStrategy) {
+    LatestVersionRetriever.prototype.latestVersion = function (version, versioningStrategy) {
         var _this = this;
         if (version === void 0) { version = '*'; }
-        if (namespace === void 0) { namespace = ''; }
         if (versioningStrategy === void 0) { versioningStrategy = new SemverVersioningStrategy_1.SemverVersioningStrategy(version); }
         return new Promise(function (resolve, reject) {
             _this._tagsProvider.listTags(function (err, tags) {
