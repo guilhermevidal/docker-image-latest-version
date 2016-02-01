@@ -2,10 +2,11 @@
     "name": "docker-image-latest-version",
     "version": "1.0.0",
     "description": "Checks the latest version of a docker image.",
-    "main": "dist/index.js",
+    "main": "./dist/index.js",
+    "typings": "./dist/index.d.ts",
     "directories": {
         "dist": "dist",
-        "test": "tests"
+        "test": "test"
     },
     "scripts": {
         "install-globals": "npm install typescript -g && npm install typings -g && npm install mocha -g",
