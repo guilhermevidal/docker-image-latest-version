@@ -1,4 +1,4 @@
-// Compiled using typings@0.6.3
+// Compiled using typings@0.6.4
 // Source: https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/0008781fb2a165a68d10b7f579330dcb4f6a1cb6/semver/semver.d.ts
 // Type definitions for semver v2.2.1
 // Project: https://github.com/isaacs/node-semver

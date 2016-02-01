@@ -1,32 +1,36 @@
 {
-  "name": "docker-image-latest-version",
-  "version": "1.0.0",
-  "description": "Checks the latest version of a docker image.",
-  "main": "dist/index.js",
-  "directories": {
-    "dist": "dist",
-    "test": "tests"
-  },
-  "scripts": {
-    "test": "tests/test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/guilhermevidal/docker-image-latest-version.git"
-  },
-  "author": "Guilherme Pereira Vidal",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/guilhermevidal/docker-image-latest-version/issues"
-  },
-  "homepage": "https://github.com/guilhermevidal/docker-image-latest-version",
-  "dependencies": {
-    "docker-registry-client": "^3.1.2"
-  },
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "chai-as-promised": "^5.2.0",
-    "mocha": "^2.4.5",
-    "semver": "^5.1.0"
-  }
+    "name": "docker-image-latest-version",
+    "version": "1.0.0",
+    "description": "Checks the latest version of a docker image.",
+    "main": "dist/index.js",
+    "directories": {
+        "dist": "dist",
+        "test": "tests"
+    },
+    "scripts": {
+        "install-globals": "npm install typescript -g && npm install typings -g && npm install mocha -g",
+        "typings": "typings install",
+        "build-src": "npm run typings && tsc -P src",
+        "build-test": "npm run typings && tsc -P test",
+        "build": "npm run build-src && npm run build-test",
+        "test": "npm run build && mocha"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/guilhermevidal/docker-image-latest-version.git"
+    },
+    "author": "Guilherme Pereira Vidal",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/guilhermevidal/docker-image-latest-version/issues"
+    },
+    "homepage": "https://github.com/guilhermevidal/docker-image-latest-version",
+    "dependencies": {
+        "docker-registry-client": "^3.1.2"
+    },
+    "devDependencies": {
+        "chai": "^3.5.0",
+        "chai-as-promised": "^5.2.0",
+        "semver": "^5.1.0"
+    }
 }
