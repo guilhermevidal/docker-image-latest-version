@@ -1,4 +1,3 @@
-/// <reference path="../typings/main.d.ts" />
 import { TagsProvider } from './TagsProvider';
 import { VersioningStrategy } from './VersioningStrategy';
 export declare class LatestVersionRetriever {

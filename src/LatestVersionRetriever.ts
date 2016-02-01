@@ -1,4 +1,4 @@
-///<reference path="../typings/main.d.ts" />
+///<reference path="../typings/main" />
 import * as drc from 'docker-registry-client';
 import * as semver from 'semver';
 
