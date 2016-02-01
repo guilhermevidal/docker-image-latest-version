@@ -1,6 +1,6 @@
 {
   "name": "docker-image-latest-version",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Checks the latest version of a docker image.",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
