@@ -1,0 +1,32 @@
+{
+  "name": "docker-image-latest-version",
+  "version": "1.0.0",
+  "description": "Checks the latest version of a docker image.",
+  "main": "dist/index.js",
+  "directories": {
+    "dist": "dist",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "tests/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guilhermevidal/docker-image-latest-version.git"
+  },
+  "author": "Guilherme Pereira Vidal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guilhermevidal/docker-image-latest-version/issues"
+  },
+  "homepage": "https://github.com/guilhermevidal/docker-image-latest-version",
+  "dependencies": {
+    "docker-registry-client": "^3.1.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.2.0",
+    "mocha": "^2.4.5",
+    "semver": "^5.1.0"
+  }
+}
