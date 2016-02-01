@@ -27,11 +27,11 @@
   },
   "homepage": "https://github.com/guilhermevidal/docker-image-latest-version",
   "dependencies": {
-    "docker-registry-client": "^3.1.2"
+    "docker-registry-client": "^3.1.2",
+    "semver": "^5.1.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "chai-as-promised": "^5.2.0",
-    "semver": "^5.1.0"
+    "chai-as-promised": "^5.2.0"
   }
 }
